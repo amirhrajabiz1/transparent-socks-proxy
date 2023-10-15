@@ -20,7 +20,7 @@ A script for installing a transparent socks proxy.
 
 ## Topology
 
-![Network Topology](./topology.jpg)
+![Network Topology](topology.jpg)
 
 In this scenario, the network faces a restriction where direct access to the free internet is unavailable, but a remote server serves as the gateway to the unrestricted online space.
 
