@@ -366,11 +366,11 @@ check_status "Successfully made ipv4 forwarding enable." "Failed to make ipv4 fo
 #### Make intelroute configs here
 
 
-if [ ! -d "/etc/dns2socks/block_domains" ]; then
+if [ ! -f "/etc/dns2socks/block_domains" ]; then
 	touch /etc/dns2socks/block_domains
 fi
-if [ ! -d "/etc/dns2socks/proxy_domains" ]; then
-	touch /etc/dns2socks/proxy_domains
+if [ ! -f "/etc/dns2socks/proxy_domains" ]; then
+	echo '*' > /etc/dns2socks/proxy_domains
 fi
 chmod 644 /etc/dns2socks/block_domains /etc/dns2socks/proxy_domains
 
