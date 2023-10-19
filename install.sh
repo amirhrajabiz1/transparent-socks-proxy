@@ -366,10 +366,34 @@ check_status "Successfully made ipv4 forwarding enable." "Failed to make ipv4 fo
 
 
 if [ ! -f "/etc/dns2socks/block_domains" ]; then
-	touch /etc/dns2socks/block_domains
+	echo '
+# Use Unix-style wildcard characters to match multiple domains.
+# The asterisk (*) matches any number of characters.
+# The question mark (?) matches any single character.
+
+# For example:
+# *.com - Matches all domains ending in .com
+# example?.com - Matches example1.com, example2.com, etc.
+
+# IMPORTANT:
+# The block_domains file overrides proxy_domains.
+# Domains listed in block_domains will be blocked from proxying,
+# even if they are also present in proxy_domains.
+' > /etc/dns2socks/block_domains
+
 fi
 if [ ! -f "/etc/dns2socks/proxy_domains" ]; then
-	echo '*' > /etc/dns2socks/proxy_domains
+	echo '
+# Use Unix-style wildcard characters to match multiple domains.
+# The asterisk (*) matches any number of characters.
+# The question mark (?) matches any single character.
+
+# For example:
+# *.com - Matches all domains ending in .com
+# example?.com - Matches example1.com, example2.com, etc.
+
+# To match all domains, use a single asterisk:
+*' > /etc/dns2socks/proxy_domains
 fi
 chmod 644 /etc/dns2socks/block_domains /etc/dns2socks/proxy_domains
 
