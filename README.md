@@ -22,13 +22,13 @@ A script for installing a transparent socks proxy.
 2. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/your-repository.git
+    git clone https://github.com/amirhrajabiz1/transparent-socks-proxy.git
     ```
 
 3. Navigate to the project directory:
 
     ```bash
-    cd your-repository
+    cd transparent-socks-proxy
     ```
 
 4. Make the install.sh script executable:
