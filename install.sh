@@ -252,7 +252,6 @@ A service called 'dns2socks' was configured to listen on port 53 on all network 
 The 'dns2socks' service was configured to write its logs to the '/var/log/dns2socks' directory.
 \e[32m**********\e[0m"
 
-*
 ####### Make redsocks configs here.
 
 
