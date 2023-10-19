@@ -379,6 +379,7 @@ import os
 import subprocess
 import pyinotify
 import threading
+import fnmatch
 
 # 'proxy_domains' and 'block_domains' should have 664 permissions.
 
