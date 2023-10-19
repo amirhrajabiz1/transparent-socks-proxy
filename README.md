@@ -15,6 +15,33 @@ A script for installing a transparent socks proxy.
   - Ubuntu 20.04 LTS (Focal Fossa)
   - Ubuntu 22.04 LTS (Jammy Jellyfish)
 
+### Installation
+
+1. Open a terminal window.
+
+2. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/your-repository.git
+    ```
+
+3. Navigate to the project directory:
+
+    ```bash
+    cd your-repository
+    ```
+
+4. Make the install.sh script executable:
+
+    ```bash
+    chmod +x install.sh
+    ```
+
+5. Execute the install.sh script as root:
+
+    ```bash
+    sudo ./install.sh
+    ```
 
 # How It Works
 
